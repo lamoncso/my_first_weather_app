@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/8291fbbd8a.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Petit+Formal+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Reenie+Beanie&family=Tilt+Prism&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card mb-3">
+        <div class="card-body whole-card">
+          <div class="row">
+            <div class="col-6">
+              <h6
+                class="card-title title"
+                style="--bs-card-title-color: #1d4baf"
+              >
+                Enter a city
+              </h6>
+              <form id="search-city">
+              <input
+                type="text"
+                name="search"
+                id="search"
+                placeholder="..."
+                autocomplete="off"
+              />
+              <input type="submit" type="submit" value="Search" id="btn-search"/>
+              </form>
+              <button id="current-location">Current location</button>
+            </div>
+            </div>
+              <img src="images/logo-small.png" alt="logo" class="logo-small" />
+          <div class="row current-weather">
+            <div class="col-6 col-current-weather">
+              <h3>
+                <i class="fa-solid fa-location-dot location"></i>
+                <span id="searched-city"></span>
+              </h3>
+              <br/>
+              <h1><i class="fa-solid fa-cloud-showers-heavy"></i> <span id="current-temperature"></span><a href="#" id="current-celsius">°C</a>/<a href="#" id="current-fahrenheit">°F</a></h1>
+              <h3>
+               <span id="today"></span>
+                <br />
+                <span id="current-time"></span>
+              </h3>
+              <br />
+              <p><em>Humidity: <span id="humidity"></span>%</em></p>
+              <p><em>Wind: <span id="wind"></span>km/h</em></p>
+              <br />
+              <p><strong>Have a nice day!</strong></p>
+            </div>
+            <div class="col-6 col-future-weather">
+              <div class="row future-weather">
+                <div class="col-4">Tue</div>
+                <div class="col-4"><i class="fa-solid fa-sun"></i></div>
+                <div class="col-4">3 °C</div>
+              </div>
+              <div class="row future-weather">
+                <div class="col-4">Wed</div>
+                <div class="col-4"><i class="fa-solid fa-umbrella"></i></div>
+                <div class="col-4">3 °C</div>
+              </div>
+              <div class="row future-weather">
+                <div class="col-4">Thu</div>
+                <div class="col-4"><i class="fa-solid fa-cloud"></i></div>
+                <div class="col-4">6 °C</div>
+              </div>
+              <div class="row future-weather">
+                <div class="col-4">Fri</div>
+                <div class="col-4"><i class="fa-solid fa-snowflake"></i></div>
+                <div class="col-4">0 °C</div>
+              </div>
+              <div class="row future-weather">
+                <div class="col-4">Sat</div>
+                <div class="col-4"><i class="fa-solid fa-cloud-bolt"></i></div>
+                <div class="col-4">7 °C</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
