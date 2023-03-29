@@ -9,7 +9,7 @@ h3 i {
 }
 
 .whole-card {
-  border: 5px solid #dbb6f9;
+  border: 2px solid #dbb6f9;
   border-radius: 4px;
   box-shadow: 2px 3px 9px 1px;
   line-height: 13px;
@@ -23,7 +23,7 @@ h3 i {
   max-width: 175px;
 }
 .current-weather {
-  color: #969191;
+  color: #322f2f;
 }
 
 .future-weather {
@@ -36,8 +36,9 @@ h3 i {
   border-radius: 1px;
 }
 
-.location {
-  color: #dbb6f9;
+.location,
+.fa-cloud-showers-heavy {
+  color: #0a56af;
 }
 
 .card {
@@ -102,8 +103,8 @@ footer.github-repository {
   .logo-small {
     scale: 0.7;
     position: relative;
-    top: -153px;
-    left: 160px;
+    top: -125px;
+    left: 327px;
   }
 
   .card {
@@ -111,7 +112,7 @@ footer.github-repository {
     font-family: "Cutive Mono", monospace;
   }
   .whole-card {
-    margin: 20px auto;
+    margin: 20px 5px;
   }
 
   .current-weather {
@@ -126,5 +127,16 @@ footer.github-repository {
 
   .col-future-weather {
     border-left: none;
+  }
+
+  #current-location {
+    padding: 5px 40px;
+  }
+
+  footer.github-repository {
+    display: table;
+    font-size: 12px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
