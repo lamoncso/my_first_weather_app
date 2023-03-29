@@ -47,8 +47,11 @@ h3 i {
 }
 
 footer.github-repository {
+  display: table;
   font-family: "Cutive Mono", monospace;
   font-size: 14px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .title {
   font-family: "Poppins", sans-serif;
