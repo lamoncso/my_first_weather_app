@@ -45,6 +45,11 @@ h3 i {
   width: 544px;
   font-family: "Cutive Mono", monospace;
 }
+
+footer.github-repository {
+  font-family: "Cutive Mono", monospace;
+  font-size: 14px;
+}
 .title {
   font-family: "Poppins", sans-serif;
   font-family: "Reenie Beanie", cursive;
@@ -70,7 +75,7 @@ h3 i {
   padding: 5px 28px;
   border: 1px solid #0a56af;
   border-radius: 4px;
-  margin-bottom:-10px;
+  margin-bottom: -10px;
 }
 
 #search {

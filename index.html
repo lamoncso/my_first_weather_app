@@ -43,35 +43,52 @@
                 Enter a city
               </h6>
               <form id="search-city">
-              <input
-                type="text"
-                name="search"
-                id="search"
-                placeholder="..."
-                autocomplete="off"
-              />
-              <input type="submit" type="submit" value="Search" id="btn-search"/>
+                <input
+                  type="text"
+                  name="search"
+                  id="search"
+                  placeholder="..."
+                  autocomplete="off"
+                />
+                <input
+                  type="submit"
+                  type="submit"
+                  value="Search"
+                  id="btn-search"
+                />
               </form>
               <button id="current-location">Current location</button>
             </div>
-            </div>
-              <img src="images/logo-small.png" alt="logo" class="logo-small" />
+          </div>
+          <img src="images/logo-small.png" alt="logo" class="logo-small" />
           <div class="row current-weather">
             <div class="col-6 col-current-weather">
               <h3>
                 <i class="fa-solid fa-location-dot location"></i>
                 <span id="searched-city"></span>
               </h3>
-              <br/>
-              <h1><i class="fa-solid fa-cloud-showers-heavy"></i> <span id="current-temperature"></span><a href="#" id="current-celsius">°C</a>/<a href="#" id="current-fahrenheit">°F</a></h1>
+              <br />
+              <h1>
+                <i class="fa-solid fa-cloud-showers-heavy"></i>
+                <span id="current-temperature"></span
+                ><a href="#" id="current-celsius">°C</a>/<a
+                  href="#"
+                  id="current-fahrenheit"
+                  >°F</a
+                >
+              </h1>
               <h3>
-               <span id="today"></span>
+                <span id="today"></span>
                 <br />
                 <span id="current-time"></span>
               </h3>
               <br />
-              <p><em>Humidity: <span id="humidity"></span>%</em></p>
-              <p><em>Wind: <span id="wind"></span>km/h</em></p>
+              <p>
+                <em>Humidity: <span id="humidity"></span>%</em>
+              </p>
+              <p>
+                <em>Wind: <span id="wind"></span>km/h</em>
+              </p>
               <br />
               <p><strong>Have a nice day!</strong></p>
             </div>
@@ -105,6 +122,13 @@
           </div>
         </div>
       </div>
+      <footer class="github-repository">
+        <a
+          href="https://github.com/lamoncso/my_first_weather_app/commit/1060ce86ebef00b00ca618f1bf8e2beae7894df0"
+          ><strong>Open-source code</strong></a
+        >
+        by Monika Lauko
+      </footer>
     </div>
     <script src="src/index.js"></script>
   </body>
